@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* We do not want wordwrap in the first row of the table */
+th {
+    white-space : nowrap;
+    text-align : left;
+    vertical-align : top;
+}
+
+/* Allow some padding for better readability */
+td {
+    padding : 0em 0em 0.5em 2em;
+}
+
+.padded-paragraph {
+    padding-top : 0.2em;
+    padding-bottom : 0.2em;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.padding-div {
+    padding-top : 0.2em;
+    padding-bottom : 0.2em;
+}
+
+a {
+    color : red
+}
+
+.seedlist_hyperlink:hover {
+    text-decoration : underline;
+    color : black;
+    cursor : pointer;
+}
+
+/* Simple grid system */
+.sidebar-area { grid-area: menu; }
+.content-area { grid-area: main; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'menu main main main main main';
+    gap: 10px;
+    /* background-color: black; */
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #F3F4F6;
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 30px; */
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+ }
+
+ /* Allow elements to be centered vertically */
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
