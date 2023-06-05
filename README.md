@@ -11,7 +11,7 @@ Run the following commands:
 2. Login to mysql: `mysql -u root -p` (password in .env)
 3. Create the database `chirper`: `CREATE DATABASE chirper;`
 4. Grant access to it for user `sail`: `GRANT ALL PRIVILEGES ON chirper.* TO 'sail'@'%';`
-5. Flush the privileges: `FLUSH PRIVILEGES`
+5. Flush the privileges: `FLUSH PRIVILEGES;`
 6. Exit and load the dump: `mysql -u sail -p chirper < dump.sql`
 7. Load the files into `/storage/app/public/images`
 8. Create a symlink: `sail php artisan storage:link`
