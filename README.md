@@ -7,7 +7,7 @@ Run the following commands:
 1. Install php dependencies: `sail composer install`
 1. Install npm dependencies: `sail npm install`
 1. Start VITE for eye candy: `sail npm run dev`
-1. Login to docker-mysql: `docker exec -it laravel-seedlists-mysql-1`bash
+1. Login to docker-mysql: `docker exec -it laravel-seedlists-mysql-1 bash`
 2. Login to mysql: `mysql -u root -p` (password in .env)
 3. Create the database `chirper`: `CREATE DATABASE chirper;`
 4. Grant access to it for user `sail`: `GRANT ALL PRIVILEGES ON chirper.* TO 'sail'@'%';`
