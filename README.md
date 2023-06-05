@@ -17,3 +17,4 @@ Run the following commands:
 8. Create a symlink: `sail php artisan storage:link`
 9. Ready!
 
+(If mysql is not starting, you might need to down all docker volumes; `docker-compose down --volumes`)
