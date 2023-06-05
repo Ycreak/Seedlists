@@ -3,7 +3,7 @@ Run the following commands:
 
 1. Copy the .env file to your directory
 1. Install sail: `composer require laravel/sail --dev (make sure composer is correctly installed)`
-1. Run sail: `sail up` (if you have the alias installed)
+1. Init sail: `sail up --build` (if you have the alias installed)
 1. Install php dependencies: `sail composer install`
 1. Install npm dependencies: `sail npm install`
 1. Start VITE for eye candy: `sail npm run dev`
